@@ -1,0 +1,280 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color:rgb(161, 148, 168);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+text-decoration: none;
+color: rgb(119, 26, 207);
+text-decoration: none;
+font-weight: 700;
+font-size: 1.8em;
+}
+
+.navigation a{
+    color: rgb(124, 57, 186);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: rgb(99, 47, 148);
+}
+section{
+    padding: 100px 200px ;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(logo1-4.png) no-repeat;
+    background-position: center;
+    background-position-x:900px;
+    background-size: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.main h2{
+    color: rgba(201, 107, 212, 0.964);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: blueviolet;
+    font-size: 3em;
+    font-weight: 600;
+
+}
+
+
+.main h5{
+    color:rgb(12, 10, 10);
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+}
+
+.main-btn{
+    color: #fff;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+.main-btn:hover{
+    background-color: rgb(32, 50, 154);
+    transform: scale(1.1);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 1s ease;
+}
+.card:hover{
+    transform:scale(1.1) ;
+
+}
+.icons{
+    color:blueviolet;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color:blueviolet;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+background-color: #fff;
+border: 1px solid #fff;
+min-height: 14em;
+width: 23em;
+overflow: hidden;
+border-radius: 10px;
+margin: 20px;
+transition: 1s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+
+}
+.project-image img{
+    width:100%
+}
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+.more-details:hover{
+    color: blueviolet;
+}
+
+.contact .icons{
+    font-size: 4.5em;
+
+}
+
+.contact .info h3{
+    color: #000;
+}
+
+.contact .info p{
+    font-size: 1.5em;
+}
+.footer{
+    background-color: #000016;
+    color: #f8f8ff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: blueviolet;
+}
+
+.footer .social-icon a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 88px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+
+@media(max-width:64px){
+    body{
+        font-size: 12px;
+    }
+
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    
+}
